@@ -1,0 +1,170 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_container_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/fragment_shape"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:text="手机号码："
+                android:textColor="#8C7C7C"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@+id/tv_phone"
+                android:background="@drawable/edittext_selector"
+                android:gravity="left|center"
+                android:hint="请输入手机号码(11位数字)"
+                android:inputType="number"
+                android:maxLength="11"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/tv_password"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="登录密码："
+                android:textColor="#8C7C7C"
+                android:textSize="17sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/tv_password">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/et_password"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/edittext_selector"
+                        android:gravity="left|center"
+                        android:hint="请输入密码"
+                        android:inputType="numberPassword"
+                        android:maxLength="6"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <Button
+                        android:id="@+id/btn_forget"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_forget"
+                        android:gravity="center"
+                        android:text="忘记密码"
+                        android:textColor="#F6D325"
+                        android:textSize="17sp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/ck_remember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:checked="false"
+            android:drawableLeft="@drawable/checked_selector"
+            android:padding="10dp"
+            android:text="记住密码"
+            android:textColor="#8C7C7C"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="80dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_login"
+            style="@style/TabBtnLogin"
+            android:background="@drawable/button_shadow"
+            android:text="登　　录" />
+
+        <Button
+            android:id="@+id/btn_login_more"
+            style="@style/TabBtnLogin"
+            android:background="@drawable/button_shadow"
+            android:text="更多登录方式" />
+
+        <Button
+            android:id="@+id/btn_register"
+            style="@style/TabBtnLogin"
+            android:background="@drawable/button_shadow"
+            android:text="注册" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:background="@drawable/fragment_shape"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <fragment
+            android:id="@+id/fragment_static"
+            android:name="com.example.myshopping.fragment.LoginFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

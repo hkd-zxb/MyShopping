@@ -1,0 +1,182 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/iv_back"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_alignParentLeft="true"-->
+<!--            android:layout_weight="1"-->
+<!--            android:padding="10dp"-->
+<!--            android:background="@color/white"-->
+<!--            android:scaleType="fitCenter"-->
+<!--            android:src="@drawable/ic_back" />-->
+
+<!--        <androidx.appcompat.widget.Toolbar-->
+<!--            android:id="@+id/tl_head"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_weight="5"-->
+<!--            android:background="@color/white"-->
+<!--           />-->
+
+<!--    </LinearLayout>-->
+
+    <LinearLayout
+        android:id="@+id/ll_item"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/fragment_shape"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_store"
+                style="@style/TabBtnDetail"
+                android:background="@color/white"
+                android:drawableTop="@drawable/shop1"
+                android:text="店铺"
+                android:textColor="#8a8a8a" />
+
+            <Button
+                android:id="@+id/btn_service"
+                style="@style/TabBtnDetail"
+                android:background="@color/white"
+                android:drawableTop="@drawable/shop2"
+                android:text="客服"
+                android:textColor="#8a8a8a" />
+
+
+            <Button
+                android:id="@+id/btn_like"
+                style="@style/TabBtnDetail"
+                android:background="@color/white"
+                android:drawableTop="@drawable/shop_selector"
+                android:text="收藏"
+                android:textColor="#8a8a8a" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="4"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_add_cart"
+                style="@style/TabBtnDetail"
+                android:background="#FFC107"
+                android:text="加入购物车"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn_buy"
+                style="@style/TabBtnDetail"
+                android:background="#FF5722"
+                android:text="立即购买"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+    <!--    <com.google.android.material.tabs.TabLayout-->
+    <!--        android:id="@+id/tab_title"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content" />-->
+
+    <!--    <androidx.viewpager2.widget.ViewPager2-->
+    <!--        android:id="@+id/vp2_content"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_weight="1" />-->
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="horizontal">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_weight="3"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--            <Button-->
+    <!--                android:id="@+id/btn_store"-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:background="@color/white"-->
+    <!--                android:drawableTop="@drawable/shop1"-->
+    <!--                android:text="店铺"-->
+    <!--                android:textColor="#8a8a8a" />-->
+
+    <!--            <Button-->
+    <!--                android:id="@+id/btn_service"-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:background="@color/white"-->
+    <!--                android:drawableTop="@drawable/shop2"-->
+    <!--                android:text="客服"-->
+    <!--                android:textColor="#8a8a8a" />-->
+
+
+    <!--            <Button-->
+    <!--                android:id="@+id/btn_like"-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:background="@color/white"-->
+    <!--                android:drawableTop="@drawable/shop_selector"-->
+    <!--                android:gravity="center"-->
+    <!--                android:text="收藏"-->
+    <!--                android:textColor="#8a8a8a" />-->
+
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_weight="4"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--            <Button-->
+    <!--                android:id="@+id/btn_add_cart"-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:background="#FFC107"-->
+    <!--                android:text="加入购物车"-->
+    <!--                android:textColor="@color/white" />-->
+
+    <!--            <Button-->
+    <!--                android:id="@+id/btn_buy"-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:background="#FF5722"-->
+    <!--                android:text="立即购买"-->
+    <!--                android:textColor="@color/white" />-->
+    <!--        </LinearLayout>-->
+    <!--    </LinearLayout>-->
+
+</LinearLayout>

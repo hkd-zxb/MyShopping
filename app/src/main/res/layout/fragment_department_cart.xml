@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tl_head"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/fragment_shape" />
+
+    <com.example.myshopping.util.SlideRecyclerView
+        android:id="@+id/rv_cart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FAF7F7"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:gravity="center"
+        >
+
+        <CheckBox
+            android:id="@+id/cb_all"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableLeft="@drawable/checked_selector"
+            android:text="全选"
+            android:textAlignment="center"
+            android:textColor="#B3ADAD" />
+        <TextView
+            android:id="@+id/tv_SumCount"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="共0件商品"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="合计："
+            android:textColor="#000000"
+            android:textSize="13dp"
+            android:layout_marginLeft="9dp"
+            />
+        <TextView
+            android:id="@+id/tv_SumMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥ 0.0"
+            android:textColor="@color/red"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/cart_shopp_moular"
+            android:layout_width="119dp"
+            android:layout_height="match_parent"
+            android:background="@color/red"
+            android:layout_marginLeft="5dp"
+            android:text="提交订单"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</LinearLayout>

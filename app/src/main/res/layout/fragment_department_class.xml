@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--    <androidx.appcompat.widget.Toolbar-->
+    <!--        android:id="@+id/tl_head"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        android:background="@drawable/fragment_shape">-->
+    <com.example.myshopping.widget.SearchView
+        android:id="@+id/main_search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.example.myshopping.widget.SearchView>
+
+    <ListView
+        android:id="@+id/main_lv_search_results"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+    </ListView>
+
+
+    <com.example.myshopping.interceptor.MyLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:paddingRight="0dp"
+            app:tabGravity="center"
+            app:tabIndicatorColor="@color/red"
+            app:tabIndicatorHeight="0dp"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="@color/black"
+            app:tabTextAppearance="@style/TabText"
+            app:tabTextColor="@color/grey" />
+
+        <!--    </androidx.appcompat.widget.Toolbar>-->
+
+        <!-- 二代翻页视图ViewPager2节点也需要使用完整路径 -->
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/vp2_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.example.myshopping.interceptor.MyLinearLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TabLayout">
+        <!-- Color of the indicator used to show the currently selected tab. -->
+        <attr name="tabIndicatorColor" format="integer" />
+        <attr name="tabIndicatorHeight" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="EditTextUtil">
+        <attr name="editLineColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="RoundImageView">
+        <attr name="rounded_corners" format="float"/>
+    </declare-styleable>
+</resources>

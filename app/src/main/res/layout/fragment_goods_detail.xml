@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.example.myshopping.util.ObservableScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="300dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:lineSpacingExtra="10dp"
+                    android:layout_margin="10dp"
+                    android:padding="8dp"
+                    android:text="测试内容测试内容测试内容测试内容测试
+        内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测
+        试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内
+        内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测
+        试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试
+        内内容测试测试内容测试内容测试内容测试内容测试内容测试内容测试内容测
+        试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试
+        内内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测
+        试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内
+        容测试内容内容测试内容测试内容测试内容测试内容测试内容测试内容测
+        测试测试内容测试内容测试内容测试内容测试内容测试内容测试内容测
+        试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试
+        内内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测
+        试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内
+        容测试内容内容测试内容测试内容测试内容测试内容测试内容测试内容测
+        试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内
+        测试测试内容测试内容测试内容测试内容测试内容测试内容测试内容测
+        试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试
+        内内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测
+        试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内
+        容测试内容内容测试内容测试内容测试内容测试内容测试内容测试内容测
+        试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内
+        测试测试内容测试内容测试内容测试内容测试内容测试内容测试内容测
+        试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试
+        内内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测
+        试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内
+        容测试内容内容测试内容测试内容测试内容测试内容测试内容测试内容测
+        试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内
+        试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内
+        容测试内容"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+        </com.example.myshopping.util.ObservableScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lv_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+<!--        <com.example.myshopping.util.RoundImageView-->
+<!--            android:id="@+id/iv_pic"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="@dimen/head_height"-->
+<!--            android:scaleType="fitCenter" />-->
+
+        <com.example.myshopping.widget.BannerPager
+            android:id="@+id/banner_pager"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/head_height"
+
+             />
+    </LinearLayout>
+
+    <include layout="@layout/layout_toolbar" />
+
+
+</RelativeLayout>
+
+
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    android:orientation="vertical">-->
+
+    <!--    <ScrollView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:orientation="vertical">-->
+
+    <!--            <com.example.myshopping.util.RoundImageView-->
+    <!--                android:id="@+id/iv_pic"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="360dp"-->
+    <!--                android:scaleType="fitCenter" />-->
+
+    <!--            <com.example.myshopping.widget.BannerPager-->
+    <!--                android:id="@+id/banner_pager"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_margin="10dp"-->
+    <!--                android:background="@drawable/fragment_shape" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/tv_desc"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_margin="5dp"-->
+    <!--                android:gravity="center"-->
+    <!--                android:textColor="@color/black"-->
+    <!--                android:textSize="15sp" />-->
+
+    <!--        </LinearLayout>-->
+    <!--    </ScrollView>-->
+
+
+    <!--</LinearLayout>-->
